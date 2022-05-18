@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kreator CV</title>
+    <link rel="stylesheet" href="master.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="content">
+      <div id="navigation-bar">
+        <a href="#"></a>
+        <a href="https://github.com/pekalabartosz">GitHub</a>
+      </div>
+      <div id="page-content">
+        <div id="page-content-left">
+          <p style="font-size: .7rem;">darmowy i open-source</p>
+          <h1 id="zdaniedisplay" style="margin-bottom: 2.5rem; margin-top: 0rem;"></h1>
+          <a href="edit.html">stwórz swoje CV</a>
+        </div>
+        <div id="page-content-right">
+          <img id="undraw" src="undraw.png" alt="">
+        </div>
+      </div>
+      <div id="dlaczego">
+        <div class="dlatego">
+          <p class="title">Bez zakładania konta ✓</p>
+          <p>Darmowy oraz open-source edytor.</p>
+        </div>
+        <div class="dlatego">
+          <p class="title">Pobierz w pliku PDF ✓</p>
+          <p>Najbardziej przystępny format pliku do CV.</p>
+        </div>
+        <div class="dlatego">
+          <p class="title">Dopasuj pod swoje potrzeby ✓</p>
+          <p>Uzupełnij dane o sobie w paru kilknięciach.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function newFact() {
+        var zdania = ['Zacznij być traktowana/y poważnie,', 'Żarty się skończyły,', "Zmieniasz pracę?", "Odśwież swój look,", "Nudzisz się?", "Stwórz siebie,"];
+        var losowezdanie = Math.floor(Math.random() * zdania.length);
+        document.getElementById('zdaniedisplay').innerHTML = zdania[losowezdanie];
+      })();
+    </script>
+  </body>
+</html>
