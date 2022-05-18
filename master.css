@@ -53,13 +53,14 @@ h1 {
   font-size: 2rem;
 }
 #dlaczego {
-  display: flex;
+  display: inline-grid;
   position: absolute;
-  justify-content: center;
-  gap: 6rem;
-  align-items: center;
+  gap: 3rem;
   width: 100%;
   top: 70%;
+  grid-row: auto;
+   grid-template-columns: 20rem 20rem 20rem;
+   justify-content: center;
 }
 #dlaczego .title {
   color: #6963F1;
@@ -74,10 +75,13 @@ h1 {
 #undraw {
   width: 30rem;
   height: auto;
+  user-select: none;
+  object-fit: contain;
 }
 #page-content-right {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   margin-left: 15rem;
   margin-right: 15rem;
