@@ -251,6 +251,7 @@
     }
 
     $('.btn-download').click(function(e){
+      $(window).scrollTop(0);
       e.preventDefault();
       const element = document.getElementById('resumedwn');
       html2pdf().from(element).set(options).save();
