@@ -26,14 +26,18 @@ body {
 #page-content {
   display: flex;
   flex-direction: row;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 #page-content-left {
   width: 50%;
   position: absolute;
-  top: 40%;
   transform: translateY(-60%);
   margin-left: 15rem;
   margin-right: 15rem;
+  top: 40%;
 }
 #page-content-left a{
   font-size: .85rem;
@@ -57,10 +61,10 @@ h1 {
   position: absolute;
   gap: 3rem;
   width: 100%;
-  top: 70%;
   grid-row: auto;
    grid-template-columns: 20rem 20rem 20rem;
    justify-content: center;
+   margin-top: 5rem;
 }
 #dlaczego .title {
   color: #6963F1;
@@ -85,5 +89,4 @@ h1 {
   width: 100%;
   margin-left: 15rem;
   margin-right: 15rem;
-
 }
