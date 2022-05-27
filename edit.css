@@ -220,3 +220,56 @@ p:hover {
   text-align: center;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 1200px) {
+  .kategoria-menu {
+    display: none;
+  }
+  #menu {
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #resume-content {
+    width: 100%;
+  }
+  #resume {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .options p{
+    margin: .3rem;
+    padding: 0;
+  }
+  .options {
+    margin-right: 8rem;
+  }
+  #kolory {
+    margin-right: 8rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .options {
+    margin-right: auto;
+    margin-left: .5rem;
+  }
+  #kolory {
+    margin-right: auto;
+  }
+  #kolory {
+    display: flex;
+    flex-direction: column;
+  }
+  #dwnbutton {
+    margin-right: .5rem;
+  }
+}

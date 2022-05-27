@@ -90,17 +90,46 @@ h1 {
   margin-left: 15rem;
   margin-right: 15rem;
 }
-#mobile {
-  display: none;
-}
 
-@media screen and (max-width: 1100px) {
-  #mobile {
-    display: block;
-    margin-left: 1rem;
-    margin-top: 1rem;
+@media screen and (max-width: 1200px) {
+  #page-content-left {
+    width: 100%;
+    margin-top: 25vh;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: static;
   }
-  #content {
+  #page-content-right {
     display: none;
+  }
+  #git {display: none;}
+}
+@media screen and (max-width: 990px) {
+  #page-content-left {
+    width: 100%;
+    margin-top: 25vh;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+  }
+  #page-content-right {
+    display: none;
+  }
+  #git {display: none;}
+  #dlaczego {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .dlatego {
+    margin-bottom: 3rem;
   }
 }
